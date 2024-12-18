@@ -1,4 +1,4 @@
-def transform_row_to_record(raw_data):
+def transform_data_to_record(raw_data):
     return [{
         "event_id": row["eventid"],
         "date": {
