@@ -1,13 +1,4 @@
-def convert_to_int(value):
-    if value.isdigit():
-        return int(value)
-    return 0
-
-def convert_to_float(value):
-    try:
-        return float(value)
-    except ValueError:
-        return 0.0
+from app.utils.num_util import convert_to_int, convert_to_float
 
 
 def transform_data_to_record(raw_data):
