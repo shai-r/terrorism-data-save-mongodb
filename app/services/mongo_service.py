@@ -3,7 +3,7 @@ from app.utils.num_util import convert_to_int, convert_to_float
 
 def transform_data_to_record(raw_data):
     return [{
-        "event_id": row["eventid"],
+        "event_id": convert_to_int(row["eventid"]),
         "date": {
             "year": convert_to_int(row["iyear"]),
             "month": convert_to_int(row["imonth"]),

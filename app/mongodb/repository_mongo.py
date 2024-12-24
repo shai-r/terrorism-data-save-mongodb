@@ -1,5 +1,4 @@
-import pymongo
-from pymongo import ASCENDING, DESCENDING, TEXT, UpdateOne
+from pymongo import ASCENDING
 from pymongo.collection import Collection
 
 
@@ -13,7 +12,7 @@ def create_indexes(collection: Collection):
         collection.drop_indexes()
         collection.create_index(
             [("event_id", ASCENDING)],
-            # unique=True,
+            unique=True,
             name="event_id_index"
         )
 

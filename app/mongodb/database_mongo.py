@@ -19,7 +19,7 @@ def restart_mongo():
                     "required": ["event_id", "date", "location", "weapons", "casualties", "targets", "attack_type",
                                  "perpetrators"],
                     "properties": {
-                        "event_id": {"bsonType": "string"},
+                        "event_id": {"bsonType": "long"},
                         "date": {
                             "bsonType": "object",
                             "required": ["year", "month", "day"],
